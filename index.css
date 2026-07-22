@@ -12,3 +12,19 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
