@@ -13,18 +13,91 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
 .user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.post-user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
 .post-user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+}
+
+.post-username {
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-user-country {
+    font-size: 14px;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-actions {
+    width: 50%;
+    left: 0;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.like-button,
+.comment-button,
+.share-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.action-icon {
+    width: 24px;
+    height: auto;
+}
+
+.post-likes {
+    margin: 0;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.post-likes p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.post-comments {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.post-comments p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.comment-username {
+    font-weight: bold;
 }
