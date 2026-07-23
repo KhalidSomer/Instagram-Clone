@@ -28,3 +28,45 @@ const posts = [
     }
 ]
 
+{/* <i class="uis uis-heart"></i> */}
+
+const postContainer = document.getElementById("post-container")
+
+function renderPosts() {
+    let postHTML = ""
+    posts.forEach(post => {
+        postHTML += `
+        <section class="post" id="post-container">
+                <div class="post-header">
+                    <img src="${post.avatar}" alt="Post User Avatar" class="post-user-avatar">
+                    <div class="post-user-info">
+                        <h2 class="post-username">${post.name}</h2>
+                        <p class="post-user-country">${post.location}</p>
+                    </div>
+                </div>
+                <img src="${post.post}" alt="Post Image" class="post-image">
+                <div class="post-actions">
+                    <button type="button" class="like-button">
+                        <img src="images/icon-heart.png" alt="Like Icon" class="action-icon like-icon">
+                    </button>
+                    <button type="button" class="comment-button">
+                        <img src="images/icon-comment.png" alt="Comment Icon" class="action-icon comment-icon">
+                    </button>
+                    <button type="button" class="share-button">
+                        <img src="images/icon-dm.png" alt="Share Icon" class="action-icon share-icon">
+                    </button>
+                </div>
+                <div class="post-likes">
+                    <p>${post.likes} likes</p>
+                </div>
+                <div class="post-comments">
+                    <p><span class="comment-username">${post.username}</span> ${post.comment}</p>
+                </div>
+                <div class="separator"></div>
+        </section>
+        `
+    })
+    postContainer.innerHTML = postHTML
+}
+
+renderPosts()
