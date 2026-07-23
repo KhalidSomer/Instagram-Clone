@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #e7e7e7;
 }
 
 header {
@@ -100,4 +101,20 @@ header {
 
 .comment-username {
     font-weight: bold;
+}
+
+section.post {
+    /* border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb; */
+    margin: 20px auto 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+}
+
+.separator {
+    /* border: 1px solid #dbdbdb; */
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: #e7e7e7;
 }
